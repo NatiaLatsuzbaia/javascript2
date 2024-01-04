@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+</head>
+<body>
+<div  style="display: flex;">
+  <div class="class1" ></div>
+  <div class="class2" ></div>
+  <div class="class3" ></div>
+  <div class="class4" ></div>
+  <div class="class5" ></div>
+</div>
+  <script>
+    let class1=document.getElementsByClassName('class1')[0]
+    class1.style.width='200px'
+    class1.style.height='200px'
+    class1.style.backgroundColor='red'
+    let class2=document.getElementsByClassName('class2')[0]
+    class2.style.width='200px'
+    class2.style.height='200px'
+    class2.style.backgroundColor='blue'
+    let class3=document.getElementsByClassName('class3')[0]
+    class3.style.width='200px'
+    class3.style.height='200px'
+    class3.style.backgroundColor='purple'
+    let class4=document.getElementsByClassName('class4')[0]
+    class4.style.width='200px'
+    class4.style.height='200px'
+    class4.style.backgroundColor='orange'
+    let class5=document.getElementsByClassName('class5')[0]
+    class5.style.width='200px'
+    class5.style.height='200px'
+    class5.style.backgroundColor='green'
+    let masivi = [
+      document.getElementsByClassName('class1')[0],
+      document.getElementsByClassName('class2')[0],
+      document.getElementsByClassName('class3')[0],
+      document.getElementsByClassName('class4')[0],
+      document.getElementsByClassName('class5')[0]
+    ];
+
+    let masivi1 = [1, 2, 3, 4, 5];
+
+    for (let index = 0; index < masivi.length; index++) {
+      const element = masivi[index];
+      const value = masivi1[index];
+      element.innerHTML = value;
+    }
+  </script>
+
+</body>
+</html>
